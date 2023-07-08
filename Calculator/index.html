@@ -5,23 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src=jquery-2.1.4.js"></script>
     <style>
+      /*.content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }*/
         body{
     background-color: blanchedalmond;
     font-family: "Lucida Console", "Courier New", cursive;
         }
-    .progress-wrapper{
+        .clickk{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 70%;
+          left: 42%;
+          position: absolute;
+        }
+    /*.progress-wrapper{
         width: 100%;
         height: 100%;
         position: absolute;
-        display: flex;
+        display: inline-block;
         justify-content: center;
         top:0;
         left: 0;
-        background-color: black;
+
+        background-color: #ffffff40;
     }
     .progress{
-    display: flexbox;
+    display: inline-block;
     position:absolute;
     justify-content: center;
     height: 10px;
@@ -34,6 +51,7 @@
     right: 40%;
     bottom: 40%;;
     
+    
 }
 .progress .color{
     position: absolute;
@@ -41,7 +59,11 @@
     width: 0px;
     height: 10px;
     border-radius: 15px;
+    
     animation: progress 4s infinite linear ;    
+}
+.progressend{
+  animation:none
 }
 @keyframes progress{
     0%{
@@ -59,8 +81,8 @@
     100%{
         width: 100%;
     }
-};
-   /* .spinner-wrapper{
+};*/
+    .spinner-wrapper{
     width: 25%;
     height: 25%;
     background-color: blanchedalmond;
@@ -75,12 +97,14 @@
     justify-content: center;
   }
   .spinner {
-    position: relative;
+    position: absolute;
     display: flex;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
     align-items: center;
+    top:35%;
+    left:45%;
     
   }
   .spinner::before,
@@ -117,21 +141,14 @@
     transform: rotate(360deg);
     
   }
-}*/
+}
     </style>
 </head>
 <body>
-   <H1 align="center">BASIC CALCULATOR</H1>
-   <script>
-    $(window).on("load",function(){
-    $(".progress-wrapper").fadeOut("slow");
-});
-   </script>
-   <div class="progress-wrapper">
-   <div class="progress">
-    <div class="color">
-    </div>
+   <H1 align="center">BASIC CALCULATOR</H1> 
+   <div class="spinner">
    </div>
-   </div>
+   <button class="clickk">Click Me To Load The Calculator!</button>
+
 </body>
 </html>

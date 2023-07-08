@@ -6,3 +6,9 @@ window.addEventListener('load', function(){
 $(window).on("load",function(){
     $(".progress-wrapper").fadeOut("slow");
 });
+console.log("nice")
+/*const animated = document.querySelector(".animated");
+
+animated.addEventListener("animationend", () => {
+  console.log("Animation ended");
+});*/
